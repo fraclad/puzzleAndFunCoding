@@ -1,4 +1,3 @@
-
 import math
 
 def drawCube(x):
@@ -6,7 +5,7 @@ def drawCube(x):
 
     corr = 0 if x%2 == 0 else 1
 
-    top = " "*(x + int(1 - 0.5*x)) + "+" + "-"*(2*x - corr) + "+"
+    top = " "*(x + int(1 - 0.5*x)-corr) + "+" + "-"*(2*x) + "+"
     isoTop = ""
     for i in range(int(x/2)):
         mid = " "*(x-(i) - int(0.5*x) - corr) + "/" + " "*(2*x) + "/" + " "*(i) + "|"
